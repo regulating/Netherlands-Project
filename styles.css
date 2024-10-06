@@ -74,3 +74,33 @@ header .cta-btn:hover {
     background-color: #ffffff;
     color: #22c1c3;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-container {
+        text-align: center;
+    }
+
+    .cta-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
