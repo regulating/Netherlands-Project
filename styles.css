@@ -6,19 +6,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #333;
-  background-color: #f1f3f5;
+  color: #F2E8CF;
+  background-color: #F2E8CF;
   scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
 }
 
 a:hover {
-  color: #2f9e44;
+  color: #000000;
 }
 
 .main-header {
@@ -74,17 +74,18 @@ a:hover {
   color: white;
   padding: 10px 15px;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .nav-links li a:hover {
-  background-color: #52c41a;
+  background-color: #A7C957;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #000000;
 }
 
 .cta-btn {
   padding: 10px 25px;
-  background-color: #2f9e44;
+  background-color: #6A994E;
   color: white;
   border-radius: 50px;
   font-weight: bold;
@@ -94,7 +95,7 @@ a:hover {
 }
 
 .cta-btn:hover {
-  background-color: #40c057;
+  background-color: #A7C957;
   transform: scale(1.05);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4);
 }
