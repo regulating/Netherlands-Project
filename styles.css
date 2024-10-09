@@ -7,9 +7,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #F2E8CF;
-  background-color: #F2E8CF;
+  background: linear-gradient(to right, #1e613b, #6ba4bb); /* Example gradient from green to lighter green */
+  background-size: cover;
+  background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
   scroll-behavior: smooth;
+  
 }
+
 
 a {
   text-decoration: none;
@@ -23,7 +27,6 @@ a:hover {
 
 .main-header {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/1600x900/?nature,green');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -174,8 +177,8 @@ a:hover {
 }
 
 .main-footer {
-  background-color: #2f9e44;
-  color: white;
+  background: linear-gradient(to right, #2E8B57, #87CEEB); /* Example gradient from green to lighter green */
+  color: rgb(255, 255, 255);
   padding: 40px 0;
   box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -207,4 +210,277 @@ a:hover {
 .footer-links li a:hover {
   color: #c3e6cb;
   text-decoration: underline;
+}
+
+/* Form Styles for Register Page */
+.register-section {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.register-section h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f1f3f5;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: #2f9e44;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #6A994E;
+  color: rgb(255, 255, 255);
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #A7C957;
+  transform: translateY(-2px);
+}
+
+form p {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+form p {
+  color: #2f9e44;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+form p a:hover {
+  color: #40c057;
+  text-decoration: underline;
+}
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Success Message Styles */
+.success-message {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.success-message h1 {
+    font-size: 2.5rem;
+    color: #2F9E44;
+    margin-bottom: 20px;
+}
+
+.success-message p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #2E8B57; /* Forest Green */
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3CB371; /* Medium Sea Green */
+    transform: translateY(-2px);
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form h1 {
+  font-size: 2.5rem;
+  color: #2F9E44;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f1f3f5;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #2f9e44;
+}
+
+.error-message {
+  color: #FF0000;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #2E8B57; /* Forest Green */
+  color: #ffffff;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3CB371; /* Medium Sea Green */
+  transform: translateY(-2px);
+}
+
+.dashboard-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #2F9E44;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f1f3f5;
+  color: #333;
+}
+
+.btn {
+  background-color: #2E8B57;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3CB371;
+  transform: translateY(-2px);
 }
