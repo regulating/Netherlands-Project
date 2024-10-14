@@ -21,7 +21,7 @@ try {
         $stmt->bindParam(':password', $password);
 
         if ($stmt->execute()) {
-            header("Location: HTML/user_reg_success.html");
+            header("Location: ../HTML/user_reg_success.html");
             exit;
         } else {
             echo "error: unable to register user.";
