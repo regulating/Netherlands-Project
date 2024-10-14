@@ -33,7 +33,7 @@ try {
             $_SESSION['loggedin'] = true;
 
             // Redirect to a dashboard or homepage
-            header("Location: HTML/dashboard.html"); // You can change this to your dashboard page
+            header("Location: /HTML/dashboard.html"); // You can change this to your dashboard page
             exit;
         } else {
             // Handle incorrect username or password
