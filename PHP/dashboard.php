@@ -8,10 +8,14 @@ $username = "root";
 $password = "";
 
 // Check if user is logged in
-if (!isset($_SESSION['user_id'])) {
-    header("Location: HTML/login.html");
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: ../HTML/login.html"); // Redirect to login page if not logged in
     exit();
-}
+} 
+
+
 
 try {
     // Create a PDO connection
