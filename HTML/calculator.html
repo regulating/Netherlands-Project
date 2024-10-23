@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Calculator - Green Future</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/calculator.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Green Future</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../HTML/calculator.html">Calculator</a></li>
+        <li><a href="../HTML/events.html">Events</a></li>
+        <li><a href="../HTML/register.html">Register</a></li>
+        <li><a href="../HTML/blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  
+
+  <div class="calculator-container">
+    <h2>Carbon Footprint Calculator</h2>
+    <form id="carbonForm">
+      <div class="input-group">
+        <label for="energyUsage">Energy Usage (kWh per month):</label>
+        <input type="number" id="energyUsage" name="energyUsage" required>
+      </div>
+      <div class="input-group">
+        <label for="transportMiles">Transport Miles (per week):</label>
+        <input type="number" id="transportMiles" name="transportMiles" required>
+      </div>
+      <button type="submit" class="cta-btn">Calculate</button>
+    </form>
+
+    <div class="result-container" id="resultContainer">
+      <h3>Latest Calculation</h3>
+      <p id="latestResult"></p>
+    </div>
+
+    <div class="previous-results">
+      <h3>Previous Calculations</h3>
+      <div id="previousResults"></div>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="/JS/script.js"></script>
+
+</body>
+
+</html>
