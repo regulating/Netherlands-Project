@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>User Dashboard</title>
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 <body>
     <nav class="navbar">
             <div class="logo">
-               <a href="index.html"><h1>Green Future</h1>
+               <a href="../index.html"><h1>Green Future</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="HTML/calculator.html">Calculator</a></li>
-                <li><a href="HTML/events.html">Events</a></li>
-                <li><a href="HTML/register.html">Register</a></li>
-                <li><a href="HTML/blog.html">Blog</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HTML/calculator.html">Calculator</a></li>
+                <li><a href="../HTML/events.html">Events</a></li>
+                <li><a href="../HTML/register.html">Register</a></li>
+                <li><a href="../HTML/blog.html">Blog</a></li>
             </ul>
             <a href="#" class="cta-btn">Get Started</a>
         </nav>
@@ -26,7 +27,7 @@
         
         <div class="form-container">
             <h2>Change Username</h2>
-            <form action="PHP/dashboard.php" method="POST">
+            <form action="../PHP/dashboard.php" method="POST">
                 <input type="hidden" name="action" value="change_username">
                 <label for="new_username">New Username</label>
                 <input type="text" id="new_username" name="new_username" required>
@@ -36,7 +37,7 @@
 
         <div class="form-container">
             <h2>Change Email</h2>
-            <form action="PHP/dashboard.php" method="POST">
+            <form action="../PHP/dashboard.php" method="POST">
                 <input type="hidden" name="action" value="change_email">
                 <label for="new_email">New Email</label>
                 <input type="email" id="new_email" name="new_email" required>
