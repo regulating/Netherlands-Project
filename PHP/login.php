@@ -6,6 +6,9 @@ $username = "root"; // Default MySQL username in XAMPP is 'root'
 $password = ""; // Leave empty if no password is set for 'root'
 
 // PDO connection string for MySQL
+
+session_start();
+
 try {
     // Create a new PDO instance
     $conn = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
